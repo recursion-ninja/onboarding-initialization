@@ -19,16 +19,23 @@ pip3 install -r requirements.txt
 The top of the `onboard_new_person.py` contains three variables which must be manually hardcoded:
 
 ```python
-GITHUB_ACCOUNTNAME = "ACCOUNTNAME" # GitHub User Name of the account which will be performing the duplication.
-GITHUB_ACCESSTOKEN = "ACCESSTOKEN" # Personal Access Token from granting the user the required permissions.
-GITHUB_TEMPLETNAME = "TEMPLETPATH" # The name of the repository to be duplicated, from user's repositories.
+GITHUB_ACCOUNTNAME = "ACCOUNTNAME"
+GITHUB_ACCESSTOKEN = "ACCESSTOKEN"
+GITHUB_TEMPLETNAME = "TEMPLETPATH"
 ```
 
-  - `GITHUB_ACCOUNTNAME`: The GitHub user name of the GitHub account which will be performing the repository duplication via the GitHub API. Both the source templet repository and the destination duplicate repository must be owned by the GitHub user.
+  - `GITHUB_ACCOUNTNAME`:  
+       The GitHub user name of the GitHub account which will be performing the repository duplication via the GitHub API.
+       Both the source templet repository and the destination duplicate repository must be owned by the GitHub user.
 
-  - `GITHUB_ACCESSTOKEN`: The GitHub "Personal Access Token" for the GitHub account which will be interacting with the GitHub API. The token must grant the GitHub account the requisite permissions to duplicate the repository. You can create a GitHub Personal Access Token by following [these instructions][1].
+  - `GITHUB_ACCESSTOKEN`:  
+      The GitHub "Personal Access Token" for the GitHub account which will be interacting with the GitHub API.
+      The token must grant the GitHub account the requisite permissions to duplicate the repository.
+      You can create a GitHub Personal Access Token by following [these instructions][1].
 
-  - `GITHUB_TEMPLETNAME`: The GitHub repository name which will be used as the source of the duplication. The templet repository must be ownded by the GitHub user interacting with the GitHub API.
+  - `GITHUB_TEMPLETNAME`:  
+      The GitHub repository name which will be used as the source of the duplication.
+      The templet repository must be ownded by the GitHub user interacting with the GitHub API.
 
 
 ## Usage
